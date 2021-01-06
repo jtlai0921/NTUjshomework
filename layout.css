@@ -1,0 +1,169 @@
+/*
+    1.<table>
+    2.css float(clearfix)
+    3.css display:inline-block
+    4.css flexbox
+    5.css grid
+*/
+
+.title {
+    font-size: bold;
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    /*左右*/
+    flex-wrap: wrap;
+    /*換行*/
+    justify-content: center;
+    /*水平*/
+}
+
+.box {
+    width: 280px;
+    margin: 10px;
+    /*內部左右排列*/
+    background-color: aquamarine;
+}
+
+
+/*RWD
+CSS Media Query*/
+
+@media(max-width:1250px) {
+    /*PC螢幕*/
+    .box {
+        width: 45%;
+    }
+}
+
+@media(max-width:500px) {
+    /*Phone螢幕*/
+    .box {
+        width: 90%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .title-break {
+        display: block;
+    }
+}
+
+.exam1 {
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    width: 300px;
+    margin: 10px;
+    /*內部左右排列*/
+    background-color: rgb(214, 87, 37);
+    text-align: center;
+    margin: 10px;
+    text-overflow: clip;
+    font-size: 72px;
+    font-style: inherit;
+    flood-color: lavender;
+}
+
+.box2 {
+    width: 300px;
+    margin: 10px;
+    /*內部左右排列*/
+    background-color: rgb(162, 211, 226);
+    text-align: center;
+    margin: 10px;
+    text-overflow: clip;
+    font-size: 72px;
+    color: lightcoral;
+}
+
+.title-break {
+    display: none;
+}
+
+.welcome {
+    height: 300px;
+    color: lightslategrey;
+    font-size: 36px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    /*垂直*/
+    align-items: center;
+    /*水平*/
+}
+
+.text {
+    width: 300px;
+    background-color: lime;
+    display: flex;
+}
+
+.left {
+    width: 30%;
+    background-color: mediumpurple;
+}
+
+.right {
+    width: 70%;
+    background-color: yellow;
+}
+
+.body {
+    margin: 0px;
+}
+
+.envents {
+    display: webkit-inline-box;
+    display: flex;
+    /*左右*/
+    flex-wrap: wrap;
+    /*換行*/
+    justify-content: center;
+    /*水平*/
+}
+
+.envent {
+    width: 300px;
+    margin: 10px;
+    /*內部左右排列*/
+    background-color: rgb(162, 211, 226);
+    text-align: center;
+    margin: 10px;
+    text-overflow: clip;
+    font-size: 72px;
+    color: lightcoral;
+}
+
+@media(max-width:1250px) {
+    /*PC螢幕*/
+    .envent {
+        /*PC螢幕*/
+        width: 45%;
+    }
+}
+
+@media(max-width:500px) {
+    /*Phone螢幕*/
+    .envent {
+        width: 90%;
+        font-size: 24px;
+        display: block;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .title-break {
+        display: block;
+    }
+}
+
+
+/*
+*/
