@@ -6,29 +6,66 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>台大資訊系統專班JS作業</title>
+    <!-- header -->
     <header>
         <div class="view">
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-view-1.jpg" class="morning" alt="">
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-view-2.jpg" class="afternoon" alt="">
-          <video autoplay loop muted class="evening">
-            <source src="https://assets.codepen.io/2002878/bilibili-winter-view-3.webm" type="video/webm" />
-          </video>
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-view-3-snow.png" class="window-cover" alt="">
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-1.jpg" class="morning" alt="">
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-2.jpg" class="afternoon" alt="">
+            <video autoplay loop muted class="evening">
+                <source src="https://assets.codepen.io/2002878/bilibili-winter-view-3.webm" type="video/webm" />
+            </video>
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-3-snow.png" class="window-cover" alt="">
         </div>
-        
+
         <div class="tree">
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-1.png" class="morning" alt="">
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-2.png" class="afternoon" alt="">
-          <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-3.png" class="evening" alt="">
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-1.png" class="morning" alt="">
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-2.png" class="afternoon" alt="">
+            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-3.png" class="evening" alt="">
         </div>
-      </header>
+    </header>
+    <!-- header -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <link rel="stylesheet" type="text/css" href="layout.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="a.js"></script>
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="canvas.css">
+
+<script type="text/javascript" src="header.js"></script>
+<script type="text/javascript" src="jq.js"></script>
 
 
 <body>
+
+    <div class="jumbotron text-center">
+        <h1>337期 JavaScript (ES6) 網頁前端工程入門</h1>
+        <p>學號:JSF337108</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3><a href="index.html">個人履歷</a></h3>
+                <p>生醫背景</p>
+                <p>剛轉職的菜鳥工程師</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="canvas"></div>
+
     <div class="title">這是<br class="title-break" />RWD1231213121312132121213</div>
     <div class="welcome">
         <div>page layout</div>
