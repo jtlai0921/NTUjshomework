@@ -32,30 +32,16 @@
 <link rel="stylesheet" type="text/css" href="layout.css">
 <link rel="stylesheet" type="text/css" href="header.css">
 <link rel="stylesheet" type="text/css" href="cycle.css">
-<link rel="stylesheet" type="text/css" href="background.css">
+<link rel="stylesheet" type="text/css" href="bird.css">
+<link rel="stylesheet" type="text/css" href="404.css">
+<link rel="stylesheet" type="text/css" href="adventure.css">
 <script type="text/javascript" src="header.js"></script>
 <script type="text/javascript" src="jq.js"></script>
 <script type="text/javascript" src="background.js"></script>
+<script type="text/javascript" src="time.js"></script>
 
 <body>
-    <!-- Optional content you want to persist between sections -->
-    <div class="content"></div>
 
-    <section class="one">
-        <div class="wrapper"></div>
-    </section>
-
-    <section class="two">
-        <div class="wrapper"></div>
-    </section>
-
-    <section class="three">
-        <div class="wrapper"></div>
-    </section>
-
-    <section class="four">
-        <div class="wrapper"></div>
-    </section>
     <div class="jumbotron text-center">
         <h1>337期 JavaScript (ES6) 網頁前端工程入門</h1>
         <p>學號:JSF337108</p>
@@ -65,18 +51,107 @@
         <div class="row">
             <div class="col-sm-4">
                 <h3><a href="index.html">個人履歷</a></h3>
-                <p>生醫背景</p>
-                <p>剛轉職的菜鳥工程師</p>
+                <div class="globe">
+                    <div class="bird">
+                        <div class="body">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="beak">
+                                <div></div>
+                            </div>
+                            <div class="feet"></div>
+                            <div class="wire"></div>
+                        </div>
+                        <div class="hills"></div>
+                        <div class="cloud"></div>
+                        <div class="cloud small"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <input type="checkbox" class="auto" id="auto" checked>
+                <label class="auto-rotate" for="auto">Auto &#x21bb;</label><br>
+                <span class="anticlockwise">&#x2190;</span>
+                <span class="clockwise">&#x2192;</span>
+                <div class="rotate"></div>
+                <div class="container">
+                    <div class="error404page">
+                        <div class="newcharacter404">
+                            <div class="chair404"></div>
+                            <div class="leftshoe404"></div>
+                            <div class="rightshoe404"></div>
+                            <div class="legs404"></div>
+                            <div class="torso404">
+                                <div class="body404"></div>
+                                <div class="leftarm404"></div>
+                                <div class="rightarm404"></div>
+                                <div class="head404">
+                                    <div class="eyes404"></div>
+                                </div>
+                            </div>
+                            <div class="laptop404"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <span id="time"></span>
+                <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7" style="border:solid 1px #7ec8ea" width="220" height="90" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe>
+                <div class="wrapper">
+                    <div class="hulk">
+                        <div class="head">
+                            <div class="mouth"></div>
+                        </div>
+                        <div class="right-arm"></div>
+                        <div class="fist"></div>
+                        <div class="left-arm"></div>
+                        <div class="body"></div>
+                        <div class="right-leg"></div>
+                        <div class="left-leg"></div>
+                    </div>
+
+                    <div class="captain">
+                        <div class="head">A</div>
+                        <div class="body">
+                            <div class="star"></div>
+                        </div>
+                        <div class="arms"></div>
+                        <div class="shield">
+                            <div class="star"></div>
+                        </div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                        <div class="boots"></div>
+                    </div>
+
+                    <div class="ironman">
+                        <div class="helmet">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="right-arm"></div>
+                        <div class="left-arm"></div>
+                        <div class="body">
+                            <div class="power"></div>
+                        </div>
+                        <div class="right-leg"></div>
+                        <div class="left-leg"></div>
+                    </div>
+
+                    <div class="thor">
+                        <div class="helmet"></div>
+                        <div class="head">
+                            <div class="beard"></div>
+                        </div>
+                        <div class="cap"></div>
+                        <div class="arm-right"></div>
+                        <div class="arm-left"></div>
+                        <div class="body"></div>
+                        <div class="hammer"></div>
+                        <div class="legs"></div>
+                        <div class="feet"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
