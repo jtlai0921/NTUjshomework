@@ -45,17 +45,21 @@
         //     x++
         // }
         // console.log(a);
-        let x = 1;
-        while (x <= 12) {
-            if (x = 1) {
-                console.log("I have " + x + " bird");
-            }
-            else if (x = 12) { console.log("I have a dozen birds"); }
-            else {
-                console.log("I have " + x + " birds");
-            }
-            x++;
-        }
+        // let x = 0;
+        // while (x = 1) {
+
+        //     console.log("I have " + x + " birds");
+        //     x++;
+        // }
+        // while (1 < x < 12) {
+
+        //     console.log("I have " + x + " birds");
+        //     x++;
+        // }
+
+
+
+
         // let number = prompt("輸入一個正整數", "");
         // number = parseInt(number);
         // let n = 1;
@@ -65,6 +69,17 @@
         //     }
         //     n++;
         // }
+        while (i = 1, i <= 9, i++) {
+            while (j = 1, j <= 9, j++) {
+                document.write(i + "*" +
+                    j + "=" +
+                    i * j + " ");
+                if (i == j) {
+                    document.write("<br/>");
+                    break;
+                } //用的if語句，如果這兩個數字相同了 那麼跳出，另起一行
+            }
+        }
     </script>
 
 </body>

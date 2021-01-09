@@ -29,7 +29,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link href="dist/css/share.min.css">
+    <script src="dist/js/share.min.js"></script>
 
 </head>
 <link rel="stylesheet" type="text/css" href="layout.css">
@@ -47,9 +48,14 @@
 <script type="text/javascript" src="time.js"></script>
 <script type="text/javascript" src="js/cityData.js"></script>
 <script type="text/javascript" src="js/WeatherScript.js"></script>
+<link rel="stylesheet/less" type="text/css" href="styles.less" />
+<script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
 
 <body>
     <div id="gradient" />
+    <div class="social-share"></div>
+
+
     <div class="jumbotron text-center">
         <h1>337期 JavaScript (ES6) 網頁前端工程入門</h1>
         <p>學號:JSF337108</p>
@@ -58,7 +64,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <h3><a href="index.html">個人履歷</a></h3>
+
                 <div class="globe">
                     <div class="bird">
                         <div class="body">
@@ -131,12 +137,14 @@
         </div>
     </div>
     <div class="welcome">
-        <div>page layout</div>
+        <div>個人履歷</div>
 
         <div>
             <div class="text">
-                <div class="left">left</div>
-                <div class="right">right</div>
+                <a href="index.html">
+                    <div class="left">left</div>
+                    <div class="right">right</div>
+                </a>
             </div>
         </div>
     </div>
