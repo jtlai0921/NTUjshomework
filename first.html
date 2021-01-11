@@ -14,7 +14,12 @@
 <link rel="stylesheet" type="text/css" href="share.css">
 
 <body>
-
+    var el = document.querySelector('.entry-content'); var socialHTML = '
+    <ul class="js-social-share">' + '
+        <li>' + fbBtn + '</li>' + '
+        <li>' + lineBtn + '</li>' + '
+        <li>' + twitterBtn + '</li>' + '
+    </ul>'; el.insertAdjacentHTML('beforebegin', socialHTML); if(document.querySelector('.sharedaddy')) { var originShare = document.querySelector('.sharedaddy'); originShare.insertAdjacentHTML('beforebegin', socialHTML); }
     <div class="sharethis-inline-share-buttons"></div>
 
     <ul class="share-buttons" data-source="simplesharingbuttons.com">
