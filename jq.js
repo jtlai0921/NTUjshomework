@@ -9,3 +9,7 @@ $(function() {
     });
 
 })
+$(function() {
+    alert('訊息開始');
+    $('h1').html('開始JavaScript');
+});
