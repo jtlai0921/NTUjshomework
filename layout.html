@@ -1,36 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh-tw">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>台大資訊系統專班JS作業</title>
-    <!-- header -->
-    <header>
-        <div class="view">
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-1.jpg" class="morning" alt="">
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-2.jpg" class="afternoon" alt="">
-            <video autoplay loop muted class="evening">
+$(function() { alert("老師我有交作業"); }) $(function() { $("h1").click(function() { alert("test"); }); })
+<div class="view">
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-view-1.jpg" class="morning" alt="">
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-view-2.jpg" class="afternoon" alt="">
+    <video autoplay loop muted class="evening">
                 <source src="https://assets.codepen.io/2002878/bilibili-winter-view-3.webm" type="video/webm" />
             </video>
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-view-3-snow.png" class="window-cover" alt="">
-        </div>
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-view-3-snow.png" class="window-cover" alt="">
+</div>
 
-        <div class="tree">
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-1.png" class="morning" alt="">
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-2.png" class="afternoon" alt="">
-            <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-3.png" class="evening" alt="">
-        </div>
-    </header>
-    <!-- header -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="dist/css/share.min.css">
-    <script src="dist/js/share.min.js"></script>
+<div class="tree">
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-1.png" class="morning" alt="">
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-2.png" class="afternoon" alt="">
+    <img src="https://assets.codepen.io/2002878/bilibili-winter-tree-3.png" class="evening" alt="">
+</div>
+</header>
+<!-- header -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="dist/css/share.min.css">
+<script src="dist/js/share.min.js"></script>
 
 </head>
 <link rel="stylesheet" type="text/css" href="layout.css">
@@ -112,11 +103,49 @@
                 <span id="time"></span>
                 <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7" style="border:solid 1px #7ec8ea" width="220" height="90" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
 </iframe>
+                <button id="select_fruit" class="ui-button ui-widget ui-corner-all">水果喜好調查</button>
+                <div id="fruit_inputbox">
+                    <p>1.請選擇最喜歡的水果</p>
+                    <p>
+                        <select id="favorite_fruit">
+      <option>芭樂</option>
+      <option>香蕉</option>
+      <option>葡萄</option>
+      <option>榴槤</option>
+      <option>木瓜</option>
+    </select>
+                    </p>
+                    <p>2.請選擇最討厭的水果</p>
+                    <p>
+                        <input type="radio" name="hatest_fruit" value="芭樂"> 芭樂
+                        <input type="radio" name="hatest_fruit" value="香蕉"> 香蕉
+                        <input type="radio" name="hatest_fruit" value="葡萄"> 葡萄
+                        <input type="radio" name="hatest_fruit" value="榴槤"> 榴槤
+                        <input type="radio" name="hatest_fruit" value="木瓜"> 木瓜
+                    </p>
+                    <p>3.請選擇最常吃的水果</p>
+                    <p>
+                        <input type="checkbox" name="often_fruit" value="芭樂"> 芭樂
+                        <input type="checkbox" name="often_fruit" value="香蕉"> 香蕉
+                        <input type="checkbox" name="often_fruit" value="葡萄"> 葡萄
+                        <input type="checkbox" name="often_fruit" value="榴槤"> 榴槤
+                        <input type="checkbox" name="often_fruit" value="木瓜"> 木瓜
+                    </p>
+                </div>
+                <div id="result_msgbox"></div>
 
                 <body onload="startTime()">
 
                     <div id="clock"></div>
-
+                    <button id="login" class="ui-button ui-widget ui-corner-all">登入系統</button>
+                    <div id="login_inputbox">
+                        <p>請輸入帳號密碼</p>
+                        <p>帳號 : <input id="account" type="text"></p>
+                        <p>密碼 : <input id="password" type="password"></p>
+                    </div>
+                    <div id="login_result">
+                        <p>帳號或密碼錯誤</p>
+                    </div>
             </div>
         </div>
     </div>
@@ -178,4 +207,4 @@
     </div>
     </body>
 
-</html>
+    </html>
