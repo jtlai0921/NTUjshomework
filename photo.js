@@ -70,3 +70,5 @@ document.querySelector("#small3").addEventListener("click", changeTxt);
 document.querySelector("#small4").addEventListener("click", changeTxt);
 document.querySelector("#small5").addEventListener("click", changeTxt);
 document.querySelector("#small6").addEventListener("click", changeTxt);
+
+
