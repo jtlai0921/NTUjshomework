@@ -9,6 +9,7 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+alert('hello world in TypeScript!');
 console.clear();
 var PIECE_DIR_CALC = 0;
 var Utils = /** @class */ (function () {

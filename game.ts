@@ -1,3 +1,5 @@
+alert('hello world in TypeScript!');
+
 console.clear();
 
 // TODO: url based
