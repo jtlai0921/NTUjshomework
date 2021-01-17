@@ -48,7 +48,7 @@ document.querySelector("#small6").addEventListener("click",
 let boxMsg = document.getElementById("box-msg");
 function changeTxt() {
     if (this.id == "small1") {
-        boxMsg.innerHTML = "利用nuvoTon NANO130KE3BN單晶片MCU微處理器在Keil C的環境下編譯，將大頭照和QR code和設計文字或動畫寫入MCU，由TFT螢幕顯示"
+        boxMsg.innerHTML = "<a herf='https://jtlai0921.github.io/NTUjshomework/layout.html'>利用nuvoTon NANO130KE3BN單晶片MCU微處理器在Keil C的環境下編譯，將大頭照和QR code和設計文字或動畫寫入MCU，由TFT螢幕顯示</a>"
     }
     if (this.id == "small2") {
         boxMsg.innerHTML = "心律血氧檢測S"
