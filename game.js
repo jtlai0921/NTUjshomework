@@ -1,5 +1,5 @@
 var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
+    __assign = Object.assign || function (t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
             s = arguments[i];
             for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
@@ -112,16 +112,18 @@ var Utils = /** @class */ (function () {
     };
     Utils.getInitialBoardState = function (construct) {
         if (construct === void 0) { construct = function () { return undefined; }; }
-        var blankRow = function () { return ({
-            A: construct(),
-            B: construct(),
-            C: construct(),
-            D: construct(),
-            E: construct(),
-            F: construct(),
-            G: construct(),
-            H: construct()
-        }); };
+        var blankRow = function () {
+            return ({
+                A: construct(),
+                B: construct(),
+                C: construct(),
+                D: construct(),
+                E: construct(),
+                F: construct(),
+                G: construct(),
+                H: construct()
+            });
+        };
         return {
             1: __assign({}, blankRow()),
             2: __assign({}, blankRow()),
@@ -853,7 +855,7 @@ var Game = /** @class */ (function () {
         var state = this.moveResultState();
         console.log(state);
         if (!state.moves && !state.captures) {
-            alert(state.stalemate ? "Stalemate!" : (this.turn === "WHITE" ? "Black" : "White") + " Wins!");
+            alert(state.stalemate ? "平手!" : (this.turn === "白棋" ? "黑棋" : "白棋") + " 勝利!");
         }
         return castledId;
     };
