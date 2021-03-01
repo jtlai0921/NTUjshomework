@@ -9,7 +9,7 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-alert('hello world in TypeScript!');
+alert('歡迎我做的西洋棋遊戲!');
 console.clear();
 var PIECE_DIR_CALC = 0;
 var Utils = /** @class */ (function () {
